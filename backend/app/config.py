@@ -15,7 +15,7 @@ class Settings(BaseSettings):
     SECRET_KEY: str = os.getenv("SECRET_KEY", "your-secret-key")
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 60 * 24 * 8  # 8 days
     DATABASE_URL: str = os.getenv(
-        "DATABASE_URL", "postgresql://postgres:postgres@localhost/pomodoro_app"
+        "DATABASE_URL", "postgresql://postgres:0000@localhost/pomotrack"
     )
 
     # CORS settings
